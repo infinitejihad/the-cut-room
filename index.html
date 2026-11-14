@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore haircuts, beard trims and grooming at The Cut Room, a barbershop concept in Barishal.">
+  <title>The Cut Room | Barishal Barbershop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;700;800&family=Inter:wght@400;500;600;700&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cut-top" id="home">
+    <header class="cut-header">
+      <a class="cut-brand" href="#home">
+        <span class="cut-logo" aria-hidden="true">Cutz</span>
+        <span>The Cut Room</span>
+      </a>
+
+      <details class="cut-menu" id="cut-menu">
+        <summary><span aria-hidden="true">☰</span> Menu</summary>
+
+        <nav aria-label="Main navigation">
+          <a href="#services"><span aria-hidden="true">✂</span> Services <span aria-hidden="true">›</span></a>
+          <a href="#pricing"><span aria-hidden="true">◇</span> Pricing <span aria-hidden="true">›</span></a>
+          <a href="#gallery"><span aria-hidden="true">▣</span> Gallery <span aria-hidden="true">›</span></a>
+          <a href="#contact"><span aria-hidden="true">☎</span> Contact <span aria-hidden="true">›</span></a>
+        </nav>
+      </details>
+    </header>
+
+    <section class="cut-hero" aria-labelledby="cut-title">
+      <img
+        class="cut-photo"
+        src="assets/my-hero.png"
+        alt=""
+        width="1536"
+        height="1024"
+        fetchpriority="high"
+      >
+
+      <div class="cut-copy">
+        <p>BARBER SHOP IN BARISHAL</p>
+        <h1 id="cut-title">PRECISION CUTS.</h1>
+        <a class="cut-booking-cta" href="#booking">Book an appointment <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+  <main>
+
+    <div class="wrap visit">
+      <div class="visit-main"><span class="eyebrow">The Cut Room</span><h2>Your barbershop in Barishal</h2><p>Haircuts, beard trims and grooming.</p></div>
+      <div class="info-card"><h3>Open hours</h3><p>Sat–Thu · 11 AM–9 PM<br>Friday · 3 PM–9 PM</p></div>
+      <div class="info-card"><h3>Let’s talk</h3><p>Barishal, Bangladesh</p><a href="#booking">Request an appointment</a></div>
+    </div>
+    <section id="services" class="wrap section">
+      <div class="section-title"><p class="eyebrow">The barbershop</p><h2>Our Barber Services</h2></div>
+      <div class="services">
+        <article><h3>Haircut</h3><p>A consultation, a classic cut or a sharp fade, and styling to finish.</p></article>
+        <article class="featured"><img src="assets/beard.webp" alt="" width="490" height="612" loading="lazy"><div><h3>Beard trim</h3><p>Shape, length and clean lines, finished with beard oil.</p></div></article>
+        <article><h3>Full grooming</h3><p>A haircut, beard trim and hot towel finish in one appointment.</p></article>
+      </div>
+    </section>
+    <section id="gallery" class="wrap section">
+      <div class="section-title"><p class="eyebrow">The gallery</p><h2>A Look Inside</h2></div>
+      <div class="gallery">
+        <figure><img src="assets/fade.webp" alt="Side profile of a textured crop with a skin fade" loading="lazy" width="490" height="612"><figcaption>Textured crop</figcaption></figure>
+        <figure><img src="assets/beard.webp" alt="Side profile of a neatly shaped short beard" loading="lazy" width="490" height="612"><figcaption>Beard detailing</figcaption></figure>
+        <figure><img src="assets/shop.webp" alt="Leather barber chair beside a warmly lit mirror" loading="lazy" width="490" height="612"><figcaption>The shop</figcaption></figure>
+      </div>
+    </section>
+    <section id="pricing" class="panel">
+      <div class="wrap section">
+        <div class="section-title"><p class="eyebrow">The price list</p><h2>Choose Your Service</h2><p class="muted">Sample prices in Bangladeshi taka.</p></div>
+        <dl class="prices">
+          <div><dt>Classic haircut</dt><dd>৳350</dd></div><div><dt>Skin fade</dt><dd>৳450</dd></div><div><dt>Beard trim</dt><dd>৳200</dd></div><div><dt>Full grooming</dt><dd>৳650</dd></div>
+        </dl>
+      </div>
+    </section>
+    <section id="booking" class="cut-booking">
+      <div class="cut-booking-card">
+        <h2>Book a chair</h2>
+        <p>Choose a service and preferred time. Date is optional; the shop confirms availability on WhatsApp.</p>
+        <form id="booking-form">
+          <div>
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" maxlength="80" required placeholder="Full name">
+          </div>
+          <div>
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Classic haircut</option>
+              <option>Skin fade</option>
+              <option>Beard trim</option>
+              <option>Full grooming</option>
+            </select>
+          </div>
+          <div class="cut-booking-date-time">
+            <div>
+              <label for="date">Preferred date (optional)</label>
+              <input id="date" name="date" type="text" inputmode="numeric" maxlength="10" placeholder="DD/MM/YYYY">
+            </div>
+            <div>
+              <label for="time">Preferred time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+          <button class="button" type="submit" id="booking-button">Preview WhatsApp request</button>
+          <p id="booking-note">Portfolio demo. Add a shop WhatsApp number to enable booking.</p>
+          <pre id="request-preview" aria-live="polite" hidden></pre>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="wrap footer-grid">
+    <div><a class="brand" href="#home">
+  <img src="assets/logo.png" alt="" width="42" height="42"><span>The Cut Room</span></a><p>Barishal, Bangladesh</p></div>
+      <div><h3>Opening hours</h3><p>Sat–Thu · 11 AM–9 PM<br>Friday · 3 PM–9 PM</p></div>
+      <div><h3>Contact</h3><p id="contact-number">Shop phone to be added</p><a href="#booking">Appointment requests</a></div>
+    </div>
+    <div class="wrap footer-end">The Cut Room · Portfolio demo</div>
+  </footer>
+</body>
+</html>
