@@ -1,10 +1,12 @@
-# The Cut Room
+# BRAIRCUT — Barishal
 
-Extract the ZIP, open the folder in VS Code, and open index.html in your browser. No installation is needed.
+Open `index.html` in a browser to preview the site. No installation is required.
 
-- index.html holds the shop details, hours, services and prices.
-- style.css controls colors, layout and mobile sizing.
-- script.js handles the mobile menu and builds the appointment message. Set shopWhatsApp to the shop's international WhatsApp number using digits only. The form previews its message until a number is configured. For a different shop name, edit the greeting in script.js too.
-- assets contains generated demo photos. Replace them with the client's photos before going live.
+- `index.html` contains the page content, shop information, service descriptions and editable sample prices.
+- `style.css` contains the warm paper palette, layout, responsive breakpoints and reduced-motion behavior.
+- `script.js` controls the mobile navigation, scroll reveals, current year and WhatsApp booking links.
+- `assets` contains the supplied shop photography. Replace these images with approved shop photos as needed.
 
-The demo uses sample prices and opening hours. Add the actual address and confirm the details with the shop before using this with customers.
+To direct WhatsApp bookings to the shop, set `shopWhatsApp` in `script.js` to the international phone number using digits only, including the country code. If left blank, WhatsApp opens with the prefilled message and lets the customer select a recipient.
+
+The listed Barishal location, opening hours and prices are sample details; confirm them with the shop before publishing.
